@@ -8,6 +8,7 @@ build/
 *.iws
 .project
 .settings
+/.asscache
 .classpath
 .class
 /.slcache
