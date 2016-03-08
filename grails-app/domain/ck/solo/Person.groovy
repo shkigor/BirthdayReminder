@@ -15,7 +15,7 @@ class Person {
     Integer bmonth
     Integer byear
 
-//    static belongsTo = [ user: User ]
+    static belongsTo = [ user: User ]
 
     static constraints = {
         lastName blank: false
@@ -28,7 +28,7 @@ class Person {
         bday nullable: true
         bmonth nullable: true
         byear nullable: true
-//        user nullable: false
+        user nullable: false
     }
 
     static mapping = {
