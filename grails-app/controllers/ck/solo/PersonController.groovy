@@ -18,11 +18,11 @@ class PersonController {
         [persons : persons]
     }
 
-//    @Secured(['ROLE_ADMIN'])
-//    def send() {
-//        personService.testSendEmail()
-//        render 'Email send'
-//    }
+    @Secured(['ROLE_ADMIN'])
+    def send() {
+        personService.testSendEmail()
+        render 'Email send'
+    }
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)

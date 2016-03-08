@@ -8,7 +8,7 @@ import java.time.Month
 @Transactional
 class PersonService {
 
-//    def mailService
+    def mailService
 
     List<Person> getListOfBirthdaysToday() {
 //        LocalDate localDate = LocalDate.now()
@@ -20,11 +20,11 @@ class PersonService {
         }.list()
     }
 
-//    def testSendEmail() {
-//        mailService.sendMail {
-//            to "igor.shklyar@gmail.com"
-//            subject "This is a test mail"
-//            body "Hello, This is a test mail, how are you?"
-//        }
-//    }
+    def testSendEmail() {
+        mailService.sendMail {
+            to "igor.shklyar@gmail.com"
+            subject "This is a test mail"
+            body "Hello, This is a test mail, how are you?"
+        }
+    }
 }
