@@ -28,7 +28,7 @@ class Person {
         bday nullable: true
         bmonth nullable: true
         byear nullable: true
-        user nullable: false
+//        user nullable: false
     }
 
     static mapping = {
